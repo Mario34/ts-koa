@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "lib": [
+      "esnext"
+    ],
+    "types": [
+      "node",
+      "koa",
+      "koa-router"
+    ],
+  },
+}

@@ -1,0 +1,37 @@
+{
+  "name": "ts-koa",
+  "version": "1.0.0",
+  "description": "typescript koa",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch src -e ts,tsx --exec ts-node ./src/server.ts",
+    "lint": "eslint ./src"
+  },
+  "keywords": [
+    "koa2",
+    "typescript"
+  ],
+  "author": "Mario34",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0"
+  },
+  "devDependencies": {
+    "@mario34/lint-config": "^0.1.2",
+    "@types/koa": "^2.13.4",
+    "@types/koa-router": "^7.4.4",
+    "@types/node": "^16.4.13",
+    "eslint": "^7.32.0",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "test/*",
+      "docs/*"
+    ],
+    "delay": 1000
+  }
+}
