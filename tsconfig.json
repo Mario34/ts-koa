@@ -1,13 +1,17 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "ES2017",
     "module": "CommonJS",
     "moduleResolution": "node",
     "strict": true,
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "baseUrl": ".",
+    "declaration": true,
+    "outDir": "dist",
     "lib": [
       "esnext"
     ],
@@ -16,5 +20,12 @@
       "koa",
       "koa-router"
     ],
+    "paths": {
+      "@r/*": ["./*"],
+      "@/*": ["src/*"]
+    }
   },
+  "include": [
+    "./src"
+  ]
 }
