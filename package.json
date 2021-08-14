@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon --watch src -e ts,tsx --exec ts-node -r tsconfig-paths/register ./src/server.ts",
     "lint": "eslint ./src",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node -r tsconfig-paths/register ./dist/server.js"
   },
   "keywords": [
     "koa2",
@@ -27,7 +28,6 @@
     "eslint": "^7.32.0",
     "nodemon": "^2.0.12",
     "ts-node": "^10.2.0",
-    "tsconfig-paths": "^3.10.1",
     "typescript": "^4.3.5"
   },
   "nodemonConfig": {

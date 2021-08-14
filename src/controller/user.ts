@@ -1,5 +1,5 @@
-import { Controller, Get, All } from '@r/src/core/decorator'
-import { userService } from '@/service'
+import { Controller, Get, All } from '../core/decorator'
+import { userService } from '../service'
 
 import type KR from 'koa-router'
 
